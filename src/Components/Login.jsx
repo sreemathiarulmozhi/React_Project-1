@@ -56,7 +56,7 @@ const Login = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          height: '300px',
+          height: '250px',
           color: 'ActiveCaption',
           width: '30%', // Adjusted the width to make it slightly smaller
         }}
@@ -82,11 +82,6 @@ const Login = () => {
           value={password}
           onChange={(o) => setPassword(o.target.value)}
         />
-        <Typography>
-          <Link color="primary" href="https://mui.com/">
-            New User? Sign Up !!
-          </Link>{' '}
-        </Typography>
         <Button
           variant="contained"
           style={{ fontWeight: 'bold' }}

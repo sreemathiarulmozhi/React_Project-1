@@ -29,38 +29,34 @@ const App = () => {
 export default App;
 
 
-//import { Routes,Route} from "react-router-dom";
-
-// import Mid from "./file/Mid";
-// import Products from "./file/Products";
-// import Grids from "./file/Grids"
-// import { RouterProvider } from 'react-router-dom'
-// import Router from "./file/Router";
-/*function App() {
+/*import About from "./Components/About";
+const App = () => {
   return (
-    <div className="page"> 
-      <Routes>
-        <Route path="/" element={<Page/>}></Route>
-        <Route path="Log" element={<Log />} />
-        <Route path="Signup" element={<SignUp />} />
-        <Route path="Seeker" element={<Seeker/>}/>
-      </Routes>
-      { <Main/>
-      <Footer/> */
+    <div>
+      <About />
+    </div>
+  );
+};
+export default App;*/
 
-/*import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Signup from './Components/Signup';
-import Login from './Components/Login';
 
-function App() {
+/*import FAQ from "./Components/FAQ";
+const App = () => {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/Signup" Components={Signup} />
-          <Route path="/Login" Components={Login} />
-          {/* Add more routes for your main content or other pages */
+    <div>
+      <FAQ />
+    </div>
+  );
+};
+export default App;*/
+
+/*import Terms from "./Components/Terms";
+const App = () => {
+  return (
+    <div>
+      <Terms />
+    </div>
+  );
+};
+export default App;*/
 

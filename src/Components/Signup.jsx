@@ -28,8 +28,8 @@ const Signup = () => {
         backgroundPosition: "center",
       }}
     >
-      <Typography component="h4" variant="h5" textAlign={'center'} fontWeight={'bold'} fontSize={'30px'}>
-        TROUVAILLE WITH US
+      <Typography component="h4" variant="h5" textAlign={'center'} fontWeight={'bold'} fontSize={'20px'}>
+        START YOUR DREAMY DIARIES WITH US!!
       </Typography>
       <Paper elevation={10} style={{ padding: '30px', display: 'flex-start', flexDirection: 'column', alignItems: 'center', height: "600px", width: "60vh" }}>
         <Typography component="h4" variant="h5" textAlign={'center'} fontWeight={'bold'} fontSize={'20px'}>
@@ -85,13 +85,8 @@ const Signup = () => {
           value={confirmpassword}
           onChange={(o) => setConfirmPassword(o.target.value)}
         />
-        <Typography>
-          <Link color="primary" href="https://mui.com/">
-            Already a User? Login!!
-          </Link>{' '}
-        </Typography>
         <Button variant="contained" style={{ fontWeight: 'bold', marginTop: '20px' }} color="primary" fullWidth onClick={handleLogin}>
-          Login
+          SIGNUP
         </Button>
       </Paper>
     </Container>

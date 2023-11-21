@@ -5,8 +5,8 @@ import Navbar from "./Components/Navbar";
 const router=createBrowserRouter([
 
 
-    {path:"/",element:<Signup />},
+    {path:"/",element:<Navbar />},
     {path:"/login",element:<Login />},
-    {path: "/navbar", element: <Navbar />},
+    {path: "/signup", element: <Signup />},
 ]);
 export default router;
