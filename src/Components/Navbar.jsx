@@ -10,14 +10,20 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import Avatar from '@mui/material/Avatar';
 import InputBase from '@mui/material/InputBase';
 import Container from '@mui/material/Container';
 import ImageListItem from '@mui/material/ImageListItem';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 import { Link } from 'react-router-dom';
 
 const pages = ['ABOUT US', 'FAQs', 'TERMS & CONDITIONS', 'SIGNUP', 'LOGIN'];
 const settings = ['Profile', 'Dashboard', 'Book Tickets', 'Travel History', 'Logout'];
+
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -72,14 +78,14 @@ function Navbar() {
       img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbET0yuWEpnf6u8GucwtC3qMeTDv6dFENCDw&usqp=CAU',
       title: 'cos',
     },
-    {
+    /*{
       img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02tTF7fLdlZMFFodXkYzmMjznAzR6LyUpCw&usqp=CAU',
       title: 'termss',
     },
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewGmNObweAIgvuYYCo0zv9SE6tGpbRoefIQ&usqp=CAU',
       title: 'cons',
-    },
+    },*/
   ];
   const td = [
     {
@@ -90,14 +96,14 @@ function Navbar() {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1PSiALbFgwirRpevX5ZZRHW_tuhzwON7Qpw&usqp=CAU',
       title: 's',
     },
-    {
+   /*{
       img: 'https://searchengineland.com/wp-content/seloads/2015/06/question-ask-faq-raise-hand-ss-1920.jpg',
       title: 'sh',
     },
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0wqcNV5SDsWsE8mgaIfk1AmDyEVUFibOjuCyaub8X35o-8pjHA-hiER2I3cCwdK4rVUw&usqp=CAU',
       title: 'abc',
-    },
+    },*/
   ];
 
   return (
@@ -105,7 +111,9 @@ function Navbar() {
       {/* Navbar */}
       <AppBar position="static" sx={{ padding: '20px', background: 'black' }}>
         <Toolbar disableGutters>
-        <TrainIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '2rem', color: 'white' }} />
+      
+            <TrainIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '2rem', color: 'white' }} />
+        
           <Typography
             variant="h6"
             noWrap
@@ -166,7 +174,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 3 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              <Avatar src="/broken-image.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -192,18 +200,108 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
+          
         </Toolbar>
       </AppBar>
       {/* Main Content */}
       <Box
         sx={{
-          padding: '30px',
+          padding: '0px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'left',
         }}
       >
-        
+        {selectedPage === null && (
+          <Container maxWidth="50%"
+          component="main"
+          sx={{ 
+            padding: '50px', 
+            height:'100vh',
+            display:'flex' ,
+            justifyContent: 'center',
+            flexDirection: 'column', 
+            alignItems: 'center',
+            backgroundImage: "url('https://w0.peakpx.com/wallpaper/21/544/HD-wallpaper-%E2%98%86-%D1%A6%C9%9B%D0%BC%CF%83%D1%8F%CE%B1%D0%B2%E2%84%93%C9%9B-%C4%B4%CF%83%CA%8B%D1%8F%D0%B8%C9%9B%CA%8F-%E2%98%86-anime-space-beautiful-journey-sweet-nature-landscape-galaxy-starry-awesome-night-bright-scenery-sky-light-lovely-wheels-wonderful-amazing.jpg')"
+            ,backgroundSize: "cover",
+            backgroundPosition: "center",
+            fontWeight:'bold',
+            color: 'white',
+            
+          }}
+          >
+             <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'row', // Set the direction to row
+      alignItems: 'center',
+      gap: '20px', // Add gap between avatar and typography
+    }}
+  >
+    <Avatar
+      alt="Your Avatar"
+      src="https://e7.pngegg.com/pngimages/344/793/png-clipart-of-train-on-track-palace-on-wheels-train-station-rail-transport-computer-icons-train-angle-public-transport.png"
+      sx={{ width: 50, height: 50, marginBottom: 10 }}
+    />
+    <Typography variant="h1" sx={{ fontSize: '4em', fontWeight: 'bold', color: 'white',marginTop:'-65px' ,fontFamily:'serif' }}>
+      Your Train Travel
+    </Typography>
+
+    <bold> Safety | Security | Punctuality</bold>
+  </Box>
+  <Box sx={{ border: '10px solid white', padding: '20px', marginTop: '1px', width: '60%' }}>
+              <Typography variant="body1" textAlign={'center'} >
+                <ul>
+                  <li>
+
+              The popularity of train routes and journeys can vary based on factors such as geography,
+            cultural significance, tourist attractions, and economic activities.
+                  </li>
+                  <li>
+            However, there are some iconic and popular train routes globally that are known for their
+                    
+            scenic beauty and cultural significance.
+                  </li>
+                  <li>
+                    
+            The invention of the train is credited to George Stephenson,
+            an English engineer often referred to as the <strong> "Father of Railways."</strong>
+            </li>
+            <li>
+
+            The development of the first steam locomotive and its successful use on a
+            public railway marked a significant milestone in the history of transportation.
+            </li>
+
+            <strong>  Here are key events leading to the invention of the train:</strong>
+
+            <h3>Early Steam Engines:</h3>
+            <li>
+
+            Steam engines had been developed and used in various industries,
+            such as mining and textile, during the 18th century.
+            </li>
+            <li>
+
+            Engineers and inventors were exploring ways to harness steam power for transportation.
+            </li>
+            <li>
+
+            The invention of the steam locomotive and the subsequent expansion of railway
+            networks revolutionized transportation, contributing to the Industrial Revolution
+            and shaping the modern world.
+            </li>
+            <li>
+
+            The impact of the train on commerce, industry, and society was profound,
+            and railways remain a crucial part of global transportation systems today.
+            </li>
+            </ul>
+
+              </Typography>
+            </Box>
+          </Container>
+        )}
         {selectedPage === 'ABOUT US' && (
           <Container
           maxWidth="xl"
@@ -218,7 +316,7 @@ function Navbar() {
             sx={{
               border: '10px solid grey',
               padding: '30px',
-              height: '150vh',
+              height: '130vh',
               width: '50%',
               display: 'flex',
               flexDirection: 'column',
@@ -287,7 +385,7 @@ function Navbar() {
       </p>             
             </Typography>
             </Box>
-            <Box sx={{ width: '50%', height: '100vh', marginLeft: '20px', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
+            <Box sx={{ width: '90%', height: '100vh', marginLeft: '50px', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
               {itemData.map((item, index) => (
                 <ImageListItem key={item.img}>
                   <img
@@ -320,10 +418,10 @@ function Navbar() {
           >
             <Box
               sx={{
-                border: '10px solid darkblue',
+                border: '10px solid black',
                 padding: '30px',
                 marginTop: '20px',
-                height: '300vh',
+                height: '160vh',
                 width: '60%',
                 display: 'flex',
                 flexDirection: 'column',
@@ -476,10 +574,10 @@ function Navbar() {
           >
             <Box
               sx={{
-                border: '10px solid lightblue',
+                border: '10px solid black',
                 padding: '40px',
                 marginTop: '20px',
-                height: '200vh',
+                height: '110vh',
                 width: '50%',
                 display: 'flex',
                 flexDirection: 'column',
@@ -536,7 +634,7 @@ function Navbar() {
               {td.map((it, inde) => (
                 <ImageListItem key={it.img}>
                   <img
-                    srcSet={`${it.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                    srcSet={`${it.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2`}
                     src={`${it.img}?w=164&h=164&fit=crop&auto=format`}
                     alt={it.title}
                     loading="lazy"
@@ -637,6 +735,49 @@ function Navbar() {
           </Container>
         )}
       </Box>
+      <Typography variant="body1" color="white" align="center" style={{ marginTop: 50 , background: 'black'}} 
+      sx={{
+        textAlign: 'initial'
+      }}>
+          {/* Your copyright or other content */}
+          &copy; Your Train Travel. All rights reserved.
+        </Typography>
+    <Toolbar>
+    <IconButton 
+          marginLeft= '100px'
+          edge="end"
+          color="inherit"
+          style={{background:'grey'}}
+          href="https://www.instagram.com/your_instagram_username/"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ marginLeft: 'auto' }} 
+          >
+          <InstagramIcon />
+        </IconButton>
+
+        {/* Facebook Icon */}
+        <IconButton
+          edge="end"
+          color="inherit"
+          style={{background:'grey'}}
+          href="https://www.facebook.com/your_facebook_username/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <FacebookIcon />
+        </IconButton>
+        <IconButton
+    edge="end"
+    color="inherit"
+    style={{background:'grey'}}
+    href="https://www.twitter.com/your_twitter_username/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <TwitterIcon />
+  </IconButton>
+    </Toolbar>
     </div>
   );
 }
