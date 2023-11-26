@@ -8,6 +8,7 @@ function App() {
 };
 export default App;*/
 
+
 /*import Signup from "./Components/Signup";
 function App() {
     return (
@@ -18,7 +19,8 @@ function App() {
 };
 export default App;*/
 
-import Navbar from "./Components/Navbar";
+
+/*import Navbar from "./Components/Navbar";
 const App = () => {
   return (
     <div>
@@ -26,37 +28,26 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default App;*/
 
 
-/*import About from "./Components/About";
+/*import Booking from "./Components/Booking";
 const App = () => {
   return (
     <div>
-      <About />
+      <Booking></Booking>
     </div>
   );
 };
 export default App;*/
 
 
-/*import FAQ from "./Components/FAQ";
+/*import { Payment } from "@material-ui/icons";
 const App = () => {
   return (
     <div>
-      <FAQ />
+      <Payment></Payment>
     </div>
   );
 };
 export default App;*/
-
-/*import Terms from "./Components/Terms";
-const App = () => {
-  return (
-    <div>
-      <Terms />
-    </div>
-  );
-};
-export default App;*/
-
