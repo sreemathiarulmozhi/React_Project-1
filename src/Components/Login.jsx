@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { TextField, Button, Container, Paper, Typography, Link, Grid } from '@mui/material';
+import { TextField, Button, Container, Paper, Typography,  Grid } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import MicrosoftIcon from '@mui/icons-material/Microsoft';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -82,15 +83,15 @@ const Login = () => {
           value={password}
           onChange={(o) => setPassword(o.target.value)}
         />
-        <Button
+   <Link to="/Booking" >    <Button
           variant="contained"
           style={{ fontWeight: 'bold' }}
           color="primary"
           fullWidth
           onClick={handleLogin}
         >
-          Login
-        </Button>
+       Login
+        </Button> </Link>
       </Paper>
     </Container>
   );

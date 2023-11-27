@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Paper, Typography, Link } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
 
 const Signup = () => {
   const [yourname, setYourname] = useState('');
@@ -8,9 +10,12 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [Createpassword, setCreatePassword] = useState('');
   const [confirmpassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     console.log('Logging in with:', { yourname, phonenumber, username, email, Createpassword, confirmpassword });
+    //history.push('/Booking');
+    navigate('/login'); 
   };
 
   return (
@@ -85,9 +90,10 @@ const Signup = () => {
           value={confirmpassword}
           onChange={(o) => setConfirmPassword(o.target.value)}
         />
+          <Link to="/login" >
         <Button variant="contained" style={{ fontWeight: 'bold', marginTop: '20px' }} color="primary" fullWidth onClick={handleLogin}>
           SIGNUP
-        </Button>
+        </Button></Link>
       </Paper>
     </Container>
   );

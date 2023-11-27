@@ -17,14 +17,10 @@ import InputBase from '@mui/material/InputBase';
 import Container from '@mui/material/Container';
 import ImageListItem from '@mui/material/ImageListItem';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
 import { Link } from 'react-router-dom';
 
 const pages = ['ABOUT US', 'FAQs', 'TERMS & CONDITIONS', 'SIGNUP', 'LOGIN'];
 const settings = ['Profile', 'Dashboard', 'Book Tickets', 'Travel History', 'Logout'];
-
-
-
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -48,7 +44,7 @@ function Navbar() {
 
   const handlePageClick = (page) => {
     setSelectedPage(page);
-    handleCloseNavMenu(); // Close the menu after clicking a page
+    handleCloseNavMenu();
   };
 
   const itemData = [
@@ -96,14 +92,14 @@ function Navbar() {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1PSiALbFgwirRpevX5ZZRHW_tuhzwON7Qpw&usqp=CAU',
       title: 's',
     },
-   /*{
+   {
       img: 'https://searchengineland.com/wp-content/seloads/2015/06/question-ask-faq-raise-hand-ss-1920.jpg',
       title: 'sh',
     },
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0wqcNV5SDsWsE8mgaIfk1AmDyEVUFibOjuCyaub8X35o-8pjHA-hiER2I3cCwdK4rVUw&usqp=CAU',
       title: 'abc',
-    },*/
+    },
   ];
 
   return (
@@ -129,8 +125,6 @@ function Navbar() {
               textDecoration: 'none',
             }}
           ></Typography>
-
-          {/* Updated button rendering for pages */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -153,7 +147,6 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          {/* Search Bar */}
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
             <InputBase
               placeholder="Search..."
@@ -317,7 +310,7 @@ function Navbar() {
               border: '10px solid grey',
               padding: '30px',
               height: '130vh',
-              width: '50%',
+              width: '70%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -421,7 +414,7 @@ function Navbar() {
                 border: '10px solid black',
                 padding: '30px',
                 marginTop: '20px',
-                height: '160vh',
+                height: '200vh',
                 width: '60%',
                 display: 'flex',
                 flexDirection: 'column',
@@ -577,7 +570,7 @@ function Navbar() {
                 border: '10px solid black',
                 padding: '40px',
                 marginTop: '20px',
-                height: '110vh',
+                height: '150vh',
                 width: '50%',
                 display: 'flex',
                 flexDirection: 'column',

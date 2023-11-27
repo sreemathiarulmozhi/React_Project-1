@@ -1,0 +1,8 @@
+{
+    "users": 
+    [
+      {"name":"Shreya","username": "Shreya_2004","phonenumber":"9025711697","email":"shreya@gmail.com", "password": "123456" },
+      {"name":"Sreemathi","username": "Sreemathi_2005","phonenumber":"9025711690", "email":"sreemathi@gmail.com","password": "2468" },
+      {"name":"Tarika","username": "Tarika_2005","phonenumber":"9025781690","email":"tarika@gmail.com", "password": "1357" }
+    ]
+}

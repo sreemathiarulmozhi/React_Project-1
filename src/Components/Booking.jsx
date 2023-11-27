@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import {Button, Container, Paper, Typography } from '@mui/material';
 import DatePicker from 'react-datepicker';
+import { Link } from 'react-router-dom';
 const Booking = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [date, setDate] = useState(new Date());
@@ -124,7 +125,7 @@ const Booking = () => {
             }}
         />
             </div>
-        <Button
+   <Link to="/Payment" >   <Button
           variant="contained"
           style={{ fontWeight: 'bold' }}
           color="primary"
@@ -132,7 +133,7 @@ const Booking = () => {
           onClick={handleLogin}
         >
           Confirm
-        </Button>
+        </Button></Link>
       </Paper>
     </Container>
   );
