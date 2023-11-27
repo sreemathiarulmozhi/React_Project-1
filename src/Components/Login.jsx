@@ -3,6 +3,8 @@ import { TextField, Button, Container, Paper, Typography,  Grid } from '@mui/mat
 import GoogleIcon from '@mui/icons-material/Google';
 import MicrosoftIcon from '@mui/icons-material/Microsoft';
 import { Link } from 'react-router-dom';
+import { userContext } from './Context';
+import { useContext } from 'react';
 
 const Login = () => {
   const [username, setUsername] = useState('');

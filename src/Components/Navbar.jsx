@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,6 +18,7 @@ import Container from '@mui/material/Container';
 import ImageListItem from '@mui/material/ImageListItem';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Link } from 'react-router-dom';
+import { userContext } from './Context';
 
 const pages = ['ABOUT US', 'FAQs', 'TERMS & CONDITIONS', 'SIGNUP', 'LOGIN'];
 const settings = ['Profile', 'Dashboard', 'Book Tickets', 'Travel History', 'Logout'];
@@ -25,6 +26,8 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [selectedPage, setSelectedPage] = useState(null);
+
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -96,15 +99,15 @@ function Navbar() {
       img: 'https://searchengineland.com/wp-content/seloads/2015/06/question-ask-faq-raise-hand-ss-1920.jpg',
       title: 'sh',
     },
-    {
+    /*{
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0wqcNV5SDsWsE8mgaIfk1AmDyEVUFibOjuCyaub8X35o-8pjHA-hiER2I3cCwdK4rVUw&usqp=CAU',
       title: 'abc',
-    },
+    },*/
   ];
 
   return (
     <div>
-      {/* Navbar */}
+      
       <AppBar position="static" sx={{ padding: '20px', background: 'black' }}>
         <Toolbar disableGutters>
       
@@ -236,9 +239,12 @@ function Navbar() {
       src="https://e7.pngegg.com/pngimages/344/793/png-clipart-of-train-on-track-palace-on-wheels-train-station-rail-transport-computer-icons-train-angle-public-transport.png"
       sx={{ width: 50, height: 50, marginBottom: 10 }}
     />
+
     <Typography variant="h1" sx={{ fontSize: '4em', fontWeight: 'bold', color: 'white',marginTop:'-65px' ,fontFamily:'serif' }}>
       Your Train Travel
     </Typography>
+    
+
 
     <bold> Safety | Security | Punctuality</bold>
   </Box>
@@ -414,7 +420,7 @@ function Navbar() {
                 border: '10px solid black',
                 padding: '30px',
                 marginTop: '20px',
-                height: '200vh',
+                height: '230vh',
                 width: '60%',
                 display: 'flex',
                 flexDirection: 'column',

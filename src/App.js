@@ -1,3 +1,24 @@
+import React from 'react'
+import { userContext } from './Components/Context'
+import { Provider } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { useState } from 'react';
+import router from './Route';
+
+const App = () => {
+  const [user, setuser] = useState('');
+  return (
+    <div>
+      <userContext.Provider value = {[user, setuser]}>
+         <RouterProvider router={router} />
+        </userContext.Provider>
+
+    </div>
+  )
+}
+export default App
+
+
 /*import Login from "./Components/Login";
 function App() {
     return (
