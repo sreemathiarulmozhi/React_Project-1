@@ -702,7 +702,7 @@ function Navbar() {
             alignItems: 'center',
             flexDirection: 'column',
             height: '100vh',
-            backgroundImage: "url('https://img.pikbest.com/background/20220119/light-snow-winter-train-composite-background_6223276.jpg!sw800')",
+            backgroundImage: "url('https://w0.peakpx.com/wallpaper/448/744/HD-wallpaper-beautiful-sky-sunset-colours-fade-pastel-pink-rainbow-sunset-weather.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
